@@ -1,0 +1,221 @@
+body {
+	background: #efefef;
+	padding-bottom: 100px;
+}
+
+ul {
+	padding: 0;
+}
+
+/*
+ * Drag and Drop
+ */
+#sortable .item {
+	background: #3399FF;
+	color: white;
+	list-style: none;
+	line-height: 50px;
+	margin-bottom: 1px;
+	padding: 0 10px;
+	text-align: center;
+	width: 732px;
+}
+
+#sortable .item:hover {
+	background: #3366FF;
+	cursor: -webkit-grab;
+	cursor: -moz-grab;
+}
+
+#sortable .item:active {
+	cursor: -webkit-grabbing;
+	cursor: -moz-grabbing;
+}
+
+/*
+ * Horizontal Accordion
+ */
+#accordion {
+	overflow: hidden;
+}
+
+#accordion li.item {
+	display: inline;
+	list-style: none;
+}
+
+#accordion .item h1 {
+	background: #3399FF;
+	color: white;
+	cursor: pointer;
+	float: left;
+	line-height: 200px;
+	margin: 0 1px 0 0;
+	text-align: center;
+	width: 50px;
+}
+
+#accordion .item .text {
+	background: #66CCFF;
+	color: #3366FF;
+	float: left;
+	overflow: hidden;
+	width: 600px;
+	height: 200px;
+}
+
+#accordion .item .text p {
+	margin: 10px;
+}
+
+/*
+ * Animation One
+ */
+.slot, .switch, #marker, .progress, .button, #bar {
+	-webkit-border-radius: 9px;
+	-moz-border-radius: 9px;
+	border-radius: 9px;
+}
+
+.slot {
+	background: -webkit-gradient(linear, left top, left bottom, from(#cdcdcd), to(#eee));
+	background: -moz-gradient(linear, left top, left bottom, from(#cdcdcd), to(#eee));
+	background: -ms-gradient(linear, left top, left bottom, from(#cdcdcd), to(#eee));
+	background: -o-gradient(linear, left top, left bottom, from(#cdcdcd), to(#eee));
+	background: gradient(linear, left top, left bottom, from(#cdcdcd), to(#eee));
+
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #fff;
+
+	-webkit-box-shadow: inset 0px 0px 15px #aaa;
+	-moz-box-shadow: inset 0px 0px 15px #aaa;
+	box-shadow: inset 0px 0px 15px #aaa;
+
+	overflow: hidden;
+
+	width: 110px;
+	height: 40px;
+}
+
+.slot p {
+	text-shadow: 0px 2px 1px #fff;
+	color: #888;
+	float: left;
+	font-family: "Helvetica";
+	font-size: 0.781em;
+	font-weight: bold;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	width: 55px;
+}
+
+.switch {
+	background: -webkit-gradient(linear, left top, left bottom, from(#efefef), to(#d0d0d0));
+	background: -moz-gradient(linear, left top, left bottom, from(#efefef), to(#d0d0d0));
+	background: -ms-gradient(linear, left top, left bottom, from(#efefef), to(#d0d0d0));
+	background: -o-gradient(linear, left top, left bottom, from(#efefef), to(#d0d0d0));
+	background: gradient(linear, left top, left bottom, from(#efefef), to(#d0d0d0));
+	
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #999;
+
+	-webkit-box-shadow: 0px 0px 9px #aaa;
+	-moz-box-shadow: 0px 0px 9px #aaa;
+	box-shadow: 0px 0px 9px #aaa;
+
+	cursor: pointer;
+
+	float: left;
+
+	margin-left: 1px;
+
+	position: relative;
+	left: 58px;
+	top: -39px;
+
+	width: 50px;
+	height: 38px;
+}
+
+/*
+ * Animation Two
+ */
+.volume {
+	width: 752px;
+	height: 5px;
+}
+
+#marker {
+	background: #090;
+
+	-webkit-border-radius: 9px;
+	-moz-border-radius: 9px;
+	border-radius: 9px;
+
+	border-top: 1px solid #0c0;
+	border-bottom: 1px solid #060;
+
+	margin-left: 1px;
+
+	width: 77px;
+	height: 3px;
+}
+
+/*
+ * Progress
+ */
+.progress-bar {
+	overflow: hidden;
+}
+
+.progress, .button {
+	border: 2px solid #777;
+	float: left;
+	margin-right: 10px;
+}
+
+.progress {
+	width: 602px;
+	height: 12px;
+}
+
+.progress #bar {
+	background: #aaa;
+	margin-top: 1px;
+	margin-left: 1px;
+	width: 0px;
+	height: 10px;
+}
+
+#percentage {
+	color: #777;
+	font-family: "Helvetica";
+	font-weight: bold;
+	float: left;
+	margin-right: 10px;
+	text-align: right;
+	width: 55px;
+}
+
+.button {
+	color: #777;
+	cursor: pointer;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	width: 12px;
+	height: 12px;
+}
+
+.button:hover {
+	border: 2px solid #444;
+}
+
+.button p {
+	margin-top: -2px;
+}
+
+.button p:hover {
+	color: #444;
+}
